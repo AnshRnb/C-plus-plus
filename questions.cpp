@@ -87,14 +87,12 @@
 //     }
 // }
 
-
 // void lowercase(string& str)
 // {
 //     for ( int i =0; i< str.length(); ++i)
 //     {
 //         str[i] =   tolower(str[i]);
 //     }
-
 
 // }
 
@@ -116,7 +114,7 @@
 //     {
 //         uppercase(str);
 //         cout<<"uppercase : "<<str<<endl;
-        
+
 //     }else if  (choice == 2){
 //         lowercase(str);
 //         cout<<"lowercase : "<<str<<endl;
@@ -127,7 +125,6 @@
 
 // }
 
-
 //--------------------same  Question but different way-------------------------
 
 // #include <iostream>
@@ -137,25 +134,25 @@
 // {
 //     int start = 0;
 //     int end = str.length() - 1;
-    
+
 //     while (start <= end)
 //     {
 //         // For start pointer
-//         if (str[start] >= 'A' && str[start] <= 'Z') 
+//         if (str[start] >= 'A' && str[start] <= 'Z')
 //         {
 //             str[start] = str[start] + 32; // Convert to lowercase
 //         }
-//         else if (str[start] >= 'a' && str[start] <= 'z') 
+//         else if (str[start] >= 'a' && str[start] <= 'z')
 //         {
 //             str[start] = str[start] - 32; // Convert to uppercase
 //         }
-        
+
 //         // For end pointer
-//         if (str[end] >= 'A' && str[end] <= 'Z') 
+//         if (str[end] >= 'A' && str[end] <= 'Z')
 //         {
 //             str[end] = str[end] + 32; // Convert to lowercase
 //         }
-//         else if (str[end] >= 'a' && str[end] <= 'z') 
+//         else if (str[end] >= 'a' && str[end] <= 'z')
 //         {
 //             str[end] = str[end] - 32; // Convert to uppercase
 //         }
@@ -179,29 +176,26 @@
 
 // ----------------friend function--------------------------
 
-
 // #include <iostream>
 // using namespace std;
 
 // class a
 // {
 //     int b = 47;  // its a private integer value
-//     friend void ansh(a obj);  
+//     friend void ansh(a obj);
 //     // Normally, classes hide their data (like keeping things secret inside the box).
 //     // A friend function is like a trusted helper that can look inside the box and
 //     // access the secret data.
 //     // The show() function is a friend of the class a.
 //     // This means show() is allowed to see and use the private variable b from
 //     // the class a.
-    
+
 // };
 
 // void ansh(a obj)
 // {
 //     cout<<obj.b - 36;
 // }
-
-
 
 // int main()
 // {
@@ -213,7 +207,6 @@
 // }
 
 // ---------------making class b inside a class  a, as a friend function
-
 
 // #include <iostream>
 // using namespace std;
@@ -232,8 +225,6 @@
 //     }
 // };
 
-
-
 // int main()
 // {
 
@@ -243,8 +234,99 @@
 
 // }
 
-// ------------------------------------------------
+// --------------------------Anagrams---------------------
 
+// The goal of this program is to check if two strings (like words) are anagrams of
+// each other. Anagrams are words that have the exact same letters,
+// just arranged differently. For example, "listen" and "silent" are anagrams.
+
+
+// #include <iostream>
+// #include <algorithm>
+// using namespace std;
+
+// bool anagrams(string str1, string str2)
+// {
+//     if (str1.length() != str2.length())
+//     {
+//         return false;
+//     }
+
+//     sort(str1.begin(), str1.end());
+//     sort(str2.begin(), str2.end());
+
+//     return str1 == str2;
+// }
+
+// int main()
+// {
+//     string str1;
+//     cout << "give first string name : " << endl;
+//     cin >> str1;
+//     string str2;
+//     cout << "give second string name : " << endl;
+//     cin >> str2;
+
+//     if (anagrams(str1, str2))
+//     {
+//         cout << "anagram" << endl;
+//     }
+//     else
+//     {
+//         cout << "not anagram" << endl;
+//     }
+// }
+
+// ------another method---------
+
+// #include <iostream>
+// #include <algorithm>
+// using namespace std;
+
+
+// bool anagrams(string str1, string str2)
+// {
+//     if (str1.length() != str2.length())
+//     {
+//         return false;
+//     }
+
+//     sort(str1.begin(), str1.end());
+//     sort(str2.begin(), str2.end());
+
+
+//The loop looks at each letter of the two strings one by one.
+    
+
+//     for (int i = 0; i <= str1.length(); ++i)
+//     {
+//         if (str1[i] != str2[i])
+//         {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// int main()
+// {
+//     string str1;
+//     cout << "give first string name : " << endl;
+//     cin >> str1;
+//     string str2;
+//     cout << "give second string name : " << endl;
+//     cin >> str2;
+
+//     if (anagrams(str1, str2))
+//     {
+//         cout << "anagram" << endl;
+//     }
+//     else
+//     {
+//         cout << "not anagram" << endl;
+//     }
+// }
 
 
 
