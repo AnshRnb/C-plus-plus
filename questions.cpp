@@ -177,6 +177,74 @@
 //     return 0;
 // }
 
+// ----------------friend function--------------------------
+
+
+// #include <iostream>
+// using namespace std;
+
+// class a
+// {
+//     int b = 47;  // its a private integer value
+//     friend void ansh(a obj);  
+//     // Normally, classes hide their data (like keeping things secret inside the box).
+//     // A friend function is like a trusted helper that can look inside the box and
+//     // access the secret data.
+//     // The show() function is a friend of the class a.
+//     // This means show() is allowed to see and use the private variable b from
+//     // the class a.
+    
+// };
+
+// void ansh(a obj)
+// {
+//     cout<<obj.b - 36;
+// }
+
+
+
+// int main()
+// {
+
+//     a obj;  // Create an object (a special instance) of class a
+//     ansh(obj);  // Call the show function, passing the object (obj)
+//     return 0;  // End of the program
+
+// }
+
+// ---------------making class b inside a class  a, as a friend function
+
+
+// #include <iostream>
+// using namespace std;
+
+// class a
+// {
+//     int b = 10;
+//     friend class b;
+// };
+
+// class b
+// {
+//     public: void ansh(a obj)
+//     {
+//         cout<<obj.b - 7;
+//     }
+// };
+
+
+
+// int main()
+// {
+
+//     a obj;
+//     b obj1;
+//     obj1.ansh(obj);
+
+// }
+
+// ------------------------------------------------
+
 
 
 
