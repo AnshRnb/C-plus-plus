@@ -328,6 +328,62 @@
 //     }
 // }
 
+// --------anagram-method by SIR--
+
+// #include <iostream>
+// // #include <algorithm>
+// using namespace std;
+
+
+// bool anagrams(string str1, string str2)
+// {
+//     if (str1.length() != str2.length())
+//     {
+//         return false;
+//     }
+
+//    int counter[256]={0};
+   
+//    for(int i = 0; i <= str1.length(); ++i)
+//    {
+//        counter[str1[i]]++;
+//        counter[str2[i]]--;
+//    }
+
+
+//     for (int i = 0; i <256; ++i)
+//     {
+//         if (counter[i]!=0)
+//         {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// int main()
+// {
+//     string str1;
+//     cout << "give first string name : " << endl;
+//     cin >> str1;
+//     string str2;
+//     cout << "give second string name : " << endl;
+//     cin >> str2;
+
+//     if (anagrams(str1, str2))
+//     {
+//         cout << "anagram" << endl;
+//     }
+//     else
+//     {
+//         cout << "not anagram" << endl;
+//     }
+// }
+
+// ------------------------
+
+
 
 
 
