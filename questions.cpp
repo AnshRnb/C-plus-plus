@@ -128,7 +128,55 @@
 // }
 
 
-//---------------------------------------------
+//--------------------same  Question but different way-------------------------
+
+// #include <iostream>
+// using namespace std;
+
+// void sto(string str)
+// {
+//     int start = 0;
+//     int end = str.length() - 1;
+    
+//     while (start <= end)
+//     {
+//         // For start pointer
+//         if (str[start] >= 'A' && str[start] <= 'Z') 
+//         {
+//             str[start] = str[start] + 32; // Convert to lowercase
+//         }
+//         else if (str[start] >= 'a' && str[start] <= 'z') 
+//         {
+//             str[start] = str[start] - 32; // Convert to uppercase
+//         }
+        
+//         // For end pointer
+//         if (str[end] >= 'A' && str[end] <= 'Z') 
+//         {
+//             str[end] = str[end] + 32; // Convert to lowercase
+//         }
+//         else if (str[end] >= 'a' && str[end] <= 'z') 
+//         {
+//             str[end] = str[end] - 32; // Convert to uppercase
+//         }
+
+//         start++;
+//         end--;
+//     }
+
+//     cout << str;
+// }
+
+// int main()
+// {
+//     string str;
+//     cout << "Enter anything without spaces: ";
+//     cin >> str;
+//     sto(str);
+
+//     return 0;
+// }
+
 
 
 
