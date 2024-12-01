@@ -615,3 +615,40 @@
 // }
 
 // ------------ constructor--------------
+
+// #include <iostream>
+// using namespace std;
+
+// In C++, a constructor is a special member function of a class that is automatically
+// called when an object of that class is created. Its main purpose is to initialize
+// the object's data members (i.e., set initial values for the attributes of the
+// object).
+
+// A constructor has the following characteristics:
+
+//     Same name as the class.
+//     No return type (not even void).
+//     It is automatically called when an object is created.
+//     It can have parameters (to initialize objects with specific values) or
+//     be parameterless (default constructor).
+
+// class ansh
+// {
+//     int y;  // just use as it is "no use"
+//     public: ansh()
+//     {
+//         cout<<"i am a constructor";
+//     }
+    
+   
+// };
+
+
+// int main()
+// {
+//     ansh obj;
+   
+    
+// }
+
+// ----------------------------
