@@ -381,7 +381,64 @@
 //     }
 // }
 
-// ------------------------
+// ---------------subsequence---------
+
+// #include <iostream>
+// using namespace std;
+
+
+// // Imagine you have a string (a group of letters). A subsequence is like a smaller
+// // string that can be made by taking some (or all) of the letters from the bigger
+// // string, but they need to stay in the same order.
+
+// bool subseq(string str1, string str2)
+// {
+//     int j = 0;  // We will keep track of which letter in str2 we are looking for.
+    
+//     // Loop through every letter in str1
+//     for (int i = 0; i < str1.length(); ++i)
+//     {
+//         // If the letter in str1 matches the current letter in str2 (pointed by 'j')
+//         if (str1[i] == str2[j])
+//         {
+//             j++;  // Move to the next letter in str2.
+//         }
+//     }
+    
+//     // If we've found all letters of str2 in str1, return true
+//     if (j == str2.length())
+//     {
+//         return true;  // str2 is a subsequence of str1
+//     }
+    
+//     return false;  // str2 is not a subsequence of str1
+// }
+
+// int main()
+// {
+//     string str1;
+//     cout << "Enter first string: ";  // Ask for the first string
+//     cin >> str1;  // Read the first string from the user
+    
+//     string str2;
+//     cout << "Enter second string: ";  // Ask for the second string (the one we want to check)
+//     cin >> str2;  // Read the second string from the user
+    
+//     // Call the subseq function to check if str2 is a subsequence of str1
+//     if (subseq(str1, str2))
+//     {
+//         cout << "Subsequence";  // If str2 is a subsequence of str1
+//     }
+//     else
+//     {
+//         cout << "Not subsequence";  // If str2 is NOT a subsequence of str1
+//     }
+    
+//     return 0;
+// }
+
+// ------------------------------------------
+
 
 
 
