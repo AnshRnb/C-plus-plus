@@ -437,7 +437,87 @@
 //     return 0;
 // }
 
-// ------------------------------------------
+// ---------------------balanced parentheses---------------------
+
+// #include <iostream>
+// using namespace std;
+
+
+// // In C++, balanced parentheses refers to the idea that every opening parenthesis
+// // ( has a corresponding closing parenthesis ) and that the order in which they 
+// // appear follows a "nested" structure. For example, in the string "{([])}",
+// // the parentheses are balanced because:
+
+// //     1.Each opening parenthesis has a matching closing parenthesis.
+// //     2.The parentheses, curly braces, and square brackets are nested in a
+// //     correct order.
+
+// bool bp(string str)
+// {
+//     int curly =0;
+//     int parentheses =0;
+//     int bracket =0;
+    
+//     for (int i = 0; i<str.length(); ++i)
+//     {
+//         char ch = str[i];
+        
+//         if(ch =='{')
+//         {
+//             curly++;
+//         }
+//         else if (ch =='(')
+//         {
+//             parentheses++;
+//         }
+//         else if (ch =='[')
+//         {
+//             bracket++;
+//         }
+//         else if (ch =='}')
+//         {
+//             curly--;
+//         }
+//         else if (ch ==')')
+//         {
+//             parentheses--;
+//         }
+//         else if (ch ==']')
+//         {
+//             bracket--;
+//         }
+//     }
+    
+    
+//     // all the parentheses are properly closed means its balance:)
+//     if( curly==0 && parentheses==0 && bracket==0)
+//     {
+//         return true;
+//     }
+    
+//     return false;
+// }
+
+
+
+
+// int main()
+// {
+//     string str = "{([])}";
+    
+//     if(bp(str)){
+//         cout<<"Balanced"<<endl;
+//     }else{
+//          cout<<"Unbalance"<<endl;
+//     }
+    
+    
+
+//     return 0;
+// }
+
+// -------------------------
+
 
 
 
