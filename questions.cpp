@@ -516,7 +516,59 @@
 //     return 0;
 // }
 
-// -------------------------
+// --------------friend function-----------
+
+// #include <iostream>
+// using namespace std;
+
+// class a
+// {
+//     int b = 47; // member::
+//     friend void ansh(a obj);
+// };
+
+// void ansh(a obj)
+// {
+//     cout<<obj.b - 36;
+// }
+
+
+// int main()
+// {
+//     a obj;
+//     ansh(obj);
+    
+// }
+
+// more----------------
+
+// #include <iostream>
+// using namespace std;
+
+// class a
+// {
+//     int b =  10;
+//     friend class b;
+    
+// };
+
+// class b
+// {
+//     public: void ansh( a obj)
+//     {
+//         cout<<obj.b;
+//     }
+    
+// };
+
+// int main()
+// {
+//     a obj;
+//     b obj1;
+//     obj1.ansh(obj);
+// }
+
+// ----------------------
 
 
 
