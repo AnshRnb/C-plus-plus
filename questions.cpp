@@ -240,7 +240,6 @@
 // each other. Anagrams are words that have the exact same letters,
 // just arranged differently. For example, "listen" and "silent" are anagrams.
 
-
 // #include <iostream>
 // #include <algorithm>
 // using namespace std;
@@ -283,7 +282,6 @@
 // #include <algorithm>
 // using namespace std;
 
-
 // bool anagrams(string str1, string str2)
 // {
 //     if (str1.length() != str2.length())
@@ -294,9 +292,7 @@
 //     sort(str1.begin(), str1.end());
 //     sort(str2.begin(), str2.end());
 
-
-//The loop looks at each letter of the two strings one by one.
-    
+// The loop looks at each letter of the two strings one by one.
 
 //     for (int i = 0; i <= str1.length(); ++i)
 //     {
@@ -334,7 +330,6 @@
 // // #include <algorithm>
 // using namespace std;
 
-
 // bool anagrams(string str1, string str2)
 // {
 //     if (str1.length() != str2.length())
@@ -343,13 +338,12 @@
 //     }
 
 //    int counter[256]={0};
-   
+
 //    for(int i = 0; i <= str1.length(); ++i)
 //    {
 //        counter[str1[i]]++;
 //        counter[str2[i]]--;
 //    }
-
 
 //     for (int i = 0; i <256; ++i)
 //     {
@@ -386,7 +380,6 @@
 // #include <iostream>
 // using namespace std;
 
-
 // // Imagine you have a string (a group of letters). A subsequence is like a smaller
 // // string that can be made by taking some (or all) of the letters from the bigger
 // // string, but they need to stay in the same order.
@@ -394,7 +387,7 @@
 // bool subseq(string str1, string str2)
 // {
 //     int j = 0;  // We will keep track of which letter in str2 we are looking for.
-    
+
 //     // Loop through every letter in str1
 //     for (int i = 0; i < str1.length(); ++i)
 //     {
@@ -404,13 +397,13 @@
 //             j++;  // Move to the next letter in str2.
 //         }
 //     }
-    
+
 //     // If we've found all letters of str2 in str1, return true
 //     if (j == str2.length())
 //     {
 //         return true;  // str2 is a subsequence of str1
 //     }
-    
+
 //     return false;  // str2 is not a subsequence of str1
 // }
 
@@ -419,11 +412,11 @@
 //     string str1;
 //     cout << "Enter first string: ";  // Ask for the first string
 //     cin >> str1;  // Read the first string from the user
-    
+
 //     string str2;
 //     cout << "Enter second string: ";  // Ask for the second string (the one we want to check)
 //     cin >> str2;  // Read the second string from the user
-    
+
 //     // Call the subseq function to check if str2 is a subsequence of str1
 //     if (subseq(str1, str2))
 //     {
@@ -433,7 +426,7 @@
 //     {
 //         cout << "Not subsequence";  // If str2 is NOT a subsequence of str1
 //     }
-    
+
 //     return 0;
 // }
 
@@ -442,9 +435,8 @@
 // #include <iostream>
 // using namespace std;
 
-
 // // In C++, balanced parentheses refers to the idea that every opening parenthesis
-// // ( has a corresponding closing parenthesis ) and that the order in which they 
+// // ( has a corresponding closing parenthesis ) and that the order in which they
 // // appear follows a "nested" structure. For example, in the string "{([])}",
 // // the parentheses are balanced because:
 
@@ -457,11 +449,11 @@
 //     int curly =0;
 //     int parentheses =0;
 //     int bracket =0;
-    
+
 //     for (int i = 0; i<str.length(); ++i)
 //     {
 //         char ch = str[i];
-        
+
 //         if(ch =='{')
 //         {
 //             curly++;
@@ -487,31 +479,25 @@
 //             bracket--;
 //         }
 //     }
-    
-    
+
 //     // all the parentheses are properly closed means its balance:)
 //     if( curly==0 && parentheses==0 && bracket==0)
 //     {
 //         return true;
 //     }
-    
+
 //     return false;
 // }
-
-
-
 
 // int main()
 // {
 //     string str = "{([])}";
-    
+
 //     if(bp(str)){
 //         cout<<"Balanced"<<endl;
 //     }else{
 //          cout<<"Unbalance"<<endl;
 //     }
-    
-    
 
 //     return 0;
 // }
@@ -532,12 +518,11 @@
 //     cout<<obj.b - 36;
 // }
 
-
 // int main()
 // {
 //     a obj;
 //     ansh(obj);
-    
+
 // }
 
 // more----------------
@@ -549,7 +534,7 @@
 // {
 //     int b =  10;
 //     friend class b;
-    
+
 // };
 
 // class b
@@ -558,7 +543,7 @@
 //     {
 //         cout<<obj.b;
 //     }
-    
+
 // };
 
 // int main()
@@ -568,11 +553,65 @@
 //     obj1.ansh(obj);
 // }
 
-// ----------------------
+// ------------all in one----------
 
+// #include <iostream>
+// using namespace std;
 
+// // This is our toy box called ansh
+// class ansh
+// {
+//     int y; // The toy inside the box,which can  hold a number currently not ;)
+// public:
+//     // The magic rule to put a number inside the toy
+//     ansh(int x)
+//     {
+//         y = x; // The box gets filled with the number x
+//     }
 
+//     // The magic button to show the number inside the toy
+//     void show()
+//     {
+//         cout << y; // It shows the number inside the box
+//     }
+// };
 
+// int main()
+// {
+//     ansh obj(10); // Make a box with the number 10 inside
+//     obj.show(); // Press the button to see the number inside
+//     return 0;
+// }
 
+// ------------------lil diff but same output-----------------
 
+// #include <iostream>
+// using namespace std;
 
+// // This is our toy box called ansh
+// class ansh
+// {
+//     int y; // The toy inside the box,which can  hold a number currently not ;)
+// public:
+//     // The magic rule to put a number inside the toy
+//     ansh(int x)
+//     {
+//         y = x; // The box gets filled with the number x
+//     }
+
+//     // The magic button to show the number inside the toy
+//     void show()
+//     {
+//         cout << y; // It shows the number inside the box
+//     }
+// };
+
+// int main()
+// {
+//     ansh obj(10); // Make a box with the number 10 inside
+//    ansh obj1(obj);  // we can do it that way create same but lil different...
+//    obj1.show();  // output will be the same
+//
+// }
+
+// ------------ constructor--------------
