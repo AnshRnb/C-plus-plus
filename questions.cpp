@@ -692,4 +692,54 @@
     
 // }
 
-// ---------------------------------
+// ---------------with function lcm and hcf------------------
+
+// #include <iostream>
+// using namespace std;
+
+
+// void hcflcm(int a , int b)
+// {
+//      int hcf;
+//      int lcm;
+    
+    
+//     for (int i =1; i<=a && i<=b; i++)
+//     {
+//         if(a%i == 0 && b%i ==0)
+//         {
+//             hcf = i;
+//             // cout<<i;
+//         }
+        
+//     }
+    
+//     cout<<"the hcf is : "<<hcf<<endl;
+    
+//     lcm = a*b/hcf;
+    
+//     cout<<"the lcm is : "<<lcm<<endl;
+    
+    
+    
+// }
+
+// int main()
+// {
+    
+   
+//     int a;
+//     cin>>a;
+//     int b;
+//     cin>>b;
+    
+//     hcflcm(a,b);
+    
+    
+    
+//     return 0;
+    
+    
+// }
+
+// ---------------------------
