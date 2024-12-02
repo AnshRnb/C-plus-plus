@@ -639,16 +639,57 @@
 //     {
 //         cout<<"i am a constructor";
 //     }
-    
-   
-// };
 
+// };
 
 // int main()
 // {
 //     ansh obj;
-   
+
+// }
+
+// --------------hcf and LCM--------------
+
+// The Least Common Multiple (LCM) of two or more numbers is the smallest number that is a
+//  multiple of each of them. In other words,it is the smallest number that both numbers
+//   divide without leaving a remainder.
+
+
+// The Highest Common Factor (HCF) or Greatest Common Divisor (GCD) of two or more numbers is
+//  the largest number that divides each of the numbers without leaving a remainder.
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+    
+//     int hcf,lcm;
+//     int a;
+//     cin>>a;
+//     int b;
+//     cin>>b;
+    
+//     for (int i =1; i<=a && i<=b; i++)
+//     {
+//         if(a%i == 0 && b%i ==0)
+//         {
+//             hcf = i;
+//             // cout<<i;
+//         }
+        
+//     }
+    
+//     cout<<"the hcf is : "<<hcf<<endl;
+    
+//     lcm = a*b/hcf;
+    
+//     cout<<"the lcm is : "<<lcm<<endl;
+      
+//     return 0;
+    
     
 // }
 
-// ----------------------------
+// ---------------------------------
