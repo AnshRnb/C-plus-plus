@@ -742,4 +742,43 @@
     
 // }
 
-// ---------------------------
+// ---------------two class a and b , using constructor to initialize the value in class a
+//and class b using getY() function to show it after and before using the pass by reference 
+//of the vlaue with &:::
+
+
+// #include <iostream>
+// using namespace std;
+
+// class a {
+//     int y = 10;  // Default value for y is 10
+// public:
+//     a(int aka) : y(aka) {}  // Constructor to initialize y with the value aka
+//     friend class b;  // Declare class b as a friend of class a
+//     int getY() const { return y; }  // Getter function to access y
+// };
+
+// class b {
+// public:
+//     void show(a &obj, int aka) {  // Pass obj by reference to modify the original object
+//         obj.y = aka;  // Modify y in the original obj
+//     }
+// };
+
+// int main() {
+//     a obj(47);  // Create an object of class a with y initialized to 47
+//     b obj1;  // Create an object of class b
+    
+//     // Print the initial value of y
+//     cout << "Initial value of y: " << obj.getY() << endl;  // Output: 47
+    
+//     // Modify y using the show function of class b
+//     obj1.show(obj, 200);  // Call show() to change y to 200
+    
+//     // Print the updated value of y
+//     cout << "Updated value of y: " << obj.getY() << endl;  // Output: 200
+    
+//     return 0;
+// }
+
+// ----------------------------------
