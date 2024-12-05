@@ -781,4 +781,105 @@
 //     return 0;
 // }
 
-// ----------------------------------
+// -------------------------best example SETTER / GETTER  AND of using copy cons...or  constructor and using classes and inheritance  OOP---------
+
+// #include <iostream>
+// using namespace std;
+
+// class a{
+    
+//     private:
+//     double salary;
+//     string name;
+    
+//     public:
+//     string course;
+//     string game;
+//     string books;
+    
+//     a (){
+//         cout<<"i am constructor"<<endl;
+//     }
+    
+//     // string name;
+//     int rollno;
+    
+//     void setter(double s, string n){
+//         salary = s;
+//         name = n;
+//     }
+
+//     //GETTER
+//     int getsalary(){
+//         return salary;
+      
+//     }
+    
+//     string getname() {
+//         return name;
+//     }
+    
+// };
+
+
+// class b : public a{
+//    //custom constructer:: 
+   
+//    public:
+//     b(const b &obj) {
+//         this->game = obj.game;
+//         this->books = obj.books;
+//         this->course = obj.course;
+//     }
+    
+//      // Default constructor for class b
+//     b() {
+//         cout << "I am constructor of class b" << endl;
+//     }
+    
+    
+// };
+
+
+
+// int main()
+// {
+//     a obj;
+    
+//     obj.setter(25000, "ansh");
+//     cout<<obj.getsalary()<<endl;
+//     cout<<obj.getname()<<endl;
+    
+    
+    
+//     b obj1;
+//     obj1.course = "python dev";
+//     cout<<obj1.course<<endl;
+    
+//     obj1.game = "GTA 6";
+//     obj1.books = "Good Habits";
+//     cout << "Game: " << obj1.game << endl;
+//     cout << "Books: " << obj1.books << endl;
+    
+    
+
+//     //copy construtor:::
+//     b obj2 = obj1;
+//     cout << "Copied Course: " << obj2.course << endl;
+//     cout << "Copied Game: " << obj2.game << endl;
+//     cout << "Copied Books: " << obj2.books << endl;
+    
+    
+   
+    
+    
+    
+//     return 0;
+// }
+
+
+
+
+
+
+
