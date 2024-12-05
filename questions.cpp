@@ -877,6 +877,75 @@
 //     return 0;
 // }
 
+// ----------------------------Constructor in c++-----------------------------------
+
+//defination::
+// if a class contains multiple constructors "where each type of constructor have different parameter list" or we can say "each with a different set of parameters."
+
+// #include <iostream>
+// using namespace std;
+
+// class A{
+    
+//     private:
+//     // int a,b;
+//     // float c;
+//     double d;     //anywhere it will work 
+    
+//     public:
+    
+//       int a,b;
+//     float c;
+//     // double d; 
+    
+    
+//     A(int aka){
+//         cout<<"i am a constructor: ";
+//         a = aka;
+//         cout<<a<<endl;
+        
+//     }
+//     //default
+//     A(){
+//         cout<<"enter two numbers  :";
+//         cin>>a>>b;
+//         cout<<a<<" "<<b<<endl;
+//     }
+    
+//     //parameterised constructor::
+//     A(int x, int y){
+//         a = x;  b =y;
+//         cout<<a<<" "<<b<<endl;
+//     }
+    
+//     A(int x, float y, double z){
+//         a = x;  c = y;  d = z;
+//         cout<<a<<" "<<c<<" "<<d<<endl;
+//     }
+    
+    
+// };
+
+// int main()
+// {
+//     //we can call this way as well::::
+    
+//     A obj0(47),obj,obj1(11,12),obj2(80,80.2f,74.11); //(in this are the arugument we are apssing)
+    
+//     //this way as well:::
+    
+//     // A obj0(47);
+//     // A obj;
+//     // A obj1(100,200);
+//     // A obj2(12,10.1f, 12.11);
+    
+    
+    
+// }
+
+
+// ------------------------------------------------------------------------
+
 
 
 
