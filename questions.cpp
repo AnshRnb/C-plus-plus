@@ -1192,7 +1192,47 @@ int main()
 // }
 
 
-// -----------------------------
+// --------------Virtual function---------------
+
+// #include <iostream>
+// using namespace std;
+
+// class A{
+//     public:
+//     int x;
+//     float y;
+    
+//     //   void ansh(){
+//       virtual void ansh(){   // with virtual keyword on the basis of obj, function will be called
+//         cout<<"ansh from A";
+//     }
+    
+// };
+
+// class B : public A{
+    
+//     public:
+    
+//      void ansh(){
+//          cout<<"ansh from B";
+//     }
+    
+// };
+
+// int main()
+// {
+    
+//     A *ptr;
+// // B aa;   //it will works the same if we use any obj until we define "VIRTUAL" in base class
+//     B aa;   // using keyword VIRTUAL will work on the basis of OBJECT ASSIGNED.
+//     ptr = &aa;
+//     ptr->ansh();
+    
+//     return 0;
+// }
+
+
+// --------------------------------------------
 
 
 
