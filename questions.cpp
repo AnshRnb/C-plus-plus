@@ -1041,7 +1041,158 @@ int main()
     
 }  
   
-// ---------------------------------------------------------------------------  
+// ---------------------------------------Some practice C-C or Parameterised constructor questions -----------------------------------  
+
+// 1 **********************/
+// #include <iostream>
+// using namespace std;
+
+// class A{
+    
+//     private:
+    
+//     public:
+//     int x = 47;
+    
+    
+//     //user define or custom C-C  we can't define M -variable in private.
+//     int a;
+//     int b;
+
+//     A() {}
+    
+     
+//     //copy constructor:::
+//     A( const A &obj ){
+//         this->a = obj.a;
+//         this->b = obj.b;
+//     }
+    
+//     A(int xi){
+//         x = xi;
+//         cout<<x;
+//     }
+    
+    
+// };
+
+// int main()
+// {
+//     A obj;
+//     A obj1(obj);
+    
+    
+    
+//     obj1.a = 11;
+//     obj1.b = 12;
+    
+
+//     cout<<obj.x<<endl;
+//     cout<<obj1.a<<endl;
+//     cout<<obj1.b<<endl;
+  
+   
+// }
+
+
+// 2 -----------------------
+
+
+// #include <iostream>
+// using namespace std;
+
+// class A{
+    
+//     private:
+//     double salary;
+    
+//     public:
+//     int x;
+// //even if we are using parameterised constructor we can't use M- variable in private A-SPECIFIER
+    
+//     A(int aka){
+//         x = aka;
+        
+//         cout<<x<<endl;
+//     }
+    
+//     A(){
+//         cout<<"i am constructor :"<<endl;
+//     }
+    
+//      void setsal(double sal){
+//        salary =  sal;
+//     }
+    
+//     double getsal()
+//     {
+//         return salary;
+//     }
+// };
+
+
+// int main()
+// {
+//     // A obj1;
+//     A obj2(111); 
+//     A obj3; //setter and getter::: function making:::
+    
+//     obj3.setsal(25000);
+    
+//     // cout<<obj2.x<<endl;  // if we gave on constructor we don't need to give it.
+//     cout<<obj3.getsal();
+    
+    
+//     return 0;
+// }
+
+
+// 3 -----------------------
+
+
+// #include <iostream>
+// using namespace std;
+
+// class A {
+    
+//     private:
+    
+//     int x;
+//     double salary;
+    
+
+//     public:
+//     // Default constructor
+//     A() {
+//         cout << "I am constructor" << endl;
+//     }
+
+//     // Parameterized constructor for x
+//     A(int aka) {
+//         x = aka;
+//          cout<<x<<endl;
+//     }
+
+//     // Parameterized constructor for salary
+//     A(double sal) {
+//         salary = sal;
+//         cout<<salary<<endl;
+//     }
+
+// };
+
+// int main() {
+//     A obj1;            // Calls the default constructor
+//     A obj2(10);         // Calls the parameterized constructor for int (x = 10)
+//     A obj3(25000);      // Calls the parameterized constructor for double (salary = 25000)
+
+ 
+
+//     return 0;
+// }
+
+
+// -----------------------------
 
 
 
