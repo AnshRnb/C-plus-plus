@@ -944,7 +944,104 @@
 // }
 
 
-// ------------------------------------------------------------------------
+// ----------------------------------COPY CONSTRUCTOR IN C++----------------------------------
+
+
+#include <iostream>
+using namespace std;
+
+  class A{
+       
+      private:
+    //   int x;
+    //   int *p;
+       
+      public:
+      
+      int x;
+      int *p;
+      
+      
+    //with or without complier will generate copy constructor:: it will show blank
+       
+      A() {
+        //   cout<<"ansh"<<endl;  //make default if is also a expl of C-C..
+        x = 5;
+        p = new int(5);
+      }
+      
+      //constructor which is define by the user is call user define or custom copy constructor
+    
+    // if we want to check the behaviour of complier C-C hide this  ...
+    
+    //   A ( const A &obj){
+    //       cout<<"user define copy constructor"<<endl;
+    //   } 
+    
+    // ...
+    
+    
+    // complier generated C-C   // it's doing "automatically" if we hide. casue it is created automatically by complier.
+    // A (A &obj){
+    //     x = obj.x;
+    //     p = obj.p;
+    // }
+    
+    //user define / custom C-C
+    // A (A &obj){
+    //     x = obj.x;
+    //     p =  new int;  //this will take new address seperate from another object.
+    //     *p = *(obj.p);
+    // }
+    
+  
+  };
+   
+   
+int main()
+{
+    //copy constructor is used to copy properties of one object into aother object.
+    
+    A obj1; // default constructor
+    A obj2(obj1);   //copy of "default constructor" to same class but different obj.
+    
+    
+    // why do we need copy constructor if complier generates automatically.
+    
+    cout<<"before changes:"<<endl;
+    cout<<obj1.x<<endl;
+    cout<<*(obj1.p)<<endl;
+    cout<<obj2.x<<endl;
+    cout<<*(obj2.p)<<endl;
+    
+    
+    //modify the value of  x and p :::
+    
+    obj1.x = 10;
+    *(obj1.p) = 10;
+    
+    
+    cout<<"After changes:"<<endl;
+    cout<<obj1.x<<endl;      //change
+    cout<<*(obj1.p)<<endl;   //change
+    cout<<obj2.x<<endl;      // we did't change and that's why not gonna change.
+    cout<<*(obj2.p)<<endl;    //change and unexpected issue with complier generated C-C.
+
+  // complier C-C only wroks with nornal varible not with * other it will change value
+  //of another obj value as well.
+  
+  //complier generated C-C do shallow copy::
+  
+//   IMP::::::::
+
+// 1.shallow copy or member wise copy is perfomed in complier generated C-C or default 
+// 2.deep copy is performed in user defined / custom copy constructor.
+// 3.if a class don't have any pointer member varible, then complier generated copy constructor is enough.
+// 4. if a class have any pointer member varible,then we need to go for user defined / custom C-C.
+    
+}  
+  
+// ---------------------------------------------------------------------------  
 
 
 
