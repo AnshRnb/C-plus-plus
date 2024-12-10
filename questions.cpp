@@ -1232,7 +1232,68 @@ int main()
 // }
 
 
-// --------------------------------------------
+// -------------------------------revision c++-------------
+// making two classes a and b, b  is a frnd of a and making functions and calling thru A and B classes....
+
+// #include <iostream>
+// using namespace std;
+
+// class A{
+    
+//     private:
+//     double salary;
+    
+//     public:
+//     string name;
+//     string course;
+    
+//     void ansh( double S){
+        
+//         salary = S;
+//         cout<<salary<<endl;
+        
+//     }
+    
+//      int getsal() { 
+//         return salary;
+        
+//     }
+    
+    
+    
+// };
+
+// class B : public A{
+    
+//     public:
+    
+//     void getit(string c){
+//         course = c;
+//         cout<<course<<endl;
+//     }
+    
+    
+    
+// };
+
+// int main()
+// {
+    
+//     A obj;
+//     B obj1;
+//     obj.name = "Ansh";
+//     // obj1.course = "dev";
+//     obj.ansh(25000);
+//     obj1.getit("developer");
+//     cout<<obj.name;
+//     // cout<<obj1.course;
+//     // cout<<obj.getsal();
+    
+
+//     return 0;
+// }
+
+// -------------------------------------------
 
 
 
