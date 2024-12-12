@@ -1293,7 +1293,57 @@ int main()
 //     return 0;
 // }
 
-// -------------------------------------------
+// ---------------------abstract class----------------------
+
+// abstact class is a class which has no object means we can't instantiated, it contain alt least one pure virtaul function in it, it serves as a bllueprint for their
+//derived classes.
+
+// #include <iostream>
+// using namespace std;
+
+// class abstract{
+//     public:
+    
+//     virtual void show() = 0;
+    
+//     void showabs(){
+//         cout<<"this is a abstract class";
+//     }
+    
+    
+// };
+
+// class derived : public abstract{
+    
+//     public:
+//     void show(){
+//          cout<<"this is from derived class";
+//     }
+    
+    
+// };
+
+// int main()
+// {
+
+//     derived obj;
+//     obj.show();
+//     obj.showabs();  we can call the normal function in abstract class with the derived class
+    
+    
+    
+//     abstract *ptr;
+//     derived obj;
+//     ptr = &obj;
+//     ptr->showabs();
+    
+    
+    
+    
+//     return 0;
+// }
+
+// ----------------------------------------------------------------------------------
 
 
 
