@@ -1473,7 +1473,59 @@ int main()
 //     return 0;
 // }
 
-// --------------------------------------------------------------------
+// -------------------------------inheritance -------------------------------------
+
+// inheritance means that when data and methods of base class are passed to their derived class is called inheritance
+
+// #include <iostream>
+// using namespace std;
+
+// class a{
+    
+//   private:  //if we make a private then make a function otherwise no problem switch
+//   // public and protected
+//   string surname = "sirsatiya";
+  
+//   public:
+  
+//   string getfunx(){
+//       return surname;
+//   }
+    
+// };
+
+// class b : a{
+    
+//     public:
+//     string name = "ansh";
+//      void namefun(){
+//         //  cout<<name<<" "<<surname<<endl;
+//          cout<<name<<" "<<getfunx()<<endl;
+//      }
+// };
+
+// class c : a{
+//     public:
+//     string name = "boby";
+//      void namef(){
+//         //  cout<<name<<" "<<surname<<endl;
+//           cout<<name<<" "<<getfunx()<<endl;
+//      }
+    
+// };
+
+// int main()
+// {
+//     b obj1;
+//     c obj2;
+//     obj1.namefun();
+//     obj2.namef();
+    
+//     return 0;
+// }
+
+
+// -------------------------------------------------------------------------------------
 
 
 
