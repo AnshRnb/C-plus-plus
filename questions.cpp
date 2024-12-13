@@ -1391,7 +1391,52 @@ int main()
 //     return 0;
 // }
 
-// --------------------------------------------------------
+// --------------------------friend function best example------------------------------
+
+// defination -> friend function is a function that is declared as a friend of a class not as a member of a class, instead of that we can access private and protected
+//memeber variable as well.
+
+// 1. friend function can't be called using the object of the class
+// 2. friend function is called like a normal function.
+// 3.friend function can access the resources of the class only by using  object of the same class
+// 4.usually friend function has a object as an arugument.
+// 5. we can define anywhere in the class private as well as public
+
+
+// #include <iostream>
+// using namespace std;
+
+// class demo {
+// private:
+//     int a, b;  // private members
+
+// public:
+//     void getdata();  // function to get data from user
+//     friend int sum(demo);  // friend function declaration
+// };
+
+// // Member function definition to get input
+// void demo::getdata() {
+//     cout << "Enter two numbers: " << endl;
+//     cin >> a >> b;
+// }
+
+// // Friend function definition to sum the values
+// int sum(demo obj) {
+//     return (obj.a + obj.b);  // accessing private members of demo class
+// }
+
+// int main() {
+//     demo obj;      // create an object of demo class
+//     obj.getdata(); // call getdata() to input numbers
+    
+//     cout << "Sum of the two numbers: " << sum(obj) << endl;  // call friend function to get the sum
+
+//     return 0;
+// }
+
+
+// -----------------------------------------------------------------------------------
 
 
 
