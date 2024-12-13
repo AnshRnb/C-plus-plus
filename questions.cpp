@@ -1343,7 +1343,55 @@ int main()
 //     return 0;
 // }
 
-// ----------------------------------------------------------------------------------
+// -----------------------------------constructor---------------------------------------------
+
+// caliing from B obj  parameterised constructor which is in a A class and defualt in both as well.
+
+// #include <iostream>
+// using namespace std;
+//  class A{
+     
+//      public:
+//      string name;
+//      string course;
+      
+//       A(){
+//           cout<<"heyy i am from A"<<endl;
+//       }
+      
+//       A(string n, string c){
+//           name = n;
+//           course = c;
+//           cout<<name<<endl;
+//           cout<<course<<endl;
+//       }
+     
+     
+//  };
+ 
+ 
+//  class B   : public A{
+     
+//      public:
+//      B(){
+//           cout<<"heyy i am from B"<<endl;
+//       }
+      
+//       B ( string n, string c) : A (n,c) {}
+     
+     
+//  };
+// int main()
+// {
+    
+//     B obj;
+//     B obj2("ansh", "dev");
+    
+
+//     return 0;
+// }
+
+// --------------------------------------------------------
 
 
 
