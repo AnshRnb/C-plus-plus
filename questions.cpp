@@ -1436,7 +1436,44 @@ int main()
 // }
 
 
-// -----------------------------------------------------------------------------------
+// ---------------------------------------friend function back to basic--------------------------------------------
+
+
+// #include <iostream>
+// using namespace std;
+
+// class A{
+//     private:
+//     int a;
+    
+//     public:
+    
+//     void getdata();
+    
+//     friend void ansh(A obj);
+// };
+
+
+// void A :: getdata(){
+//     cout<<"enter the number "<<endl;
+//     cin>>a;
+    
+// }
+
+// void ansh(A obj){
+//     cout<<obj.a + 10;
+// }
+
+// int main()
+// {
+//    A obj;
+//    obj.getdata();
+//    ansh(obj);
+
+//     return 0;
+// }
+
+// --------------------------------------------------------------------
 
 
 
